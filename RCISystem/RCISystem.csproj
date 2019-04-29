@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2323296E-3E88-496B-BA65-8667CDC643EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RCISystem</RootNamespace>
+    <AssemblyName>RCISystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BankService.cs" />
+    <Compile Include="BLL\BankAccountService.cs" />
+    <Compile Include="BLL\CheckIssuedService.cs" />
+    <Compile Include="BLL\CheckService.cs" />
+    <Compile Include="BLL\AccountantsAdviceService.cs" />
+    <Compile Include="BLL\AccountantsAdviceDetailService.cs" />
+    <Compile Include="BLL\SignatoryService.cs" />
+    <Compile Include="BLL\Interface\ISignatoryService.cs" />
+    <Compile Include="BLL\Interface\IAccountantsAdviceDetailService.cs" />
+    <Compile Include="BLL\Interface\IAccountantsAdviceService.cs" />
+    <Compile Include="BLL\UserService.cs" />
+    <Compile Include="BLL\Interface\IUserService.cs" />
+    <Compile Include="BLL\Interface\ICheckService.cs" />
+    <Compile Include="BLL\VoucherService.cs" />
+    <Compile Include="BLL\Interface\IVoucherService.cs" />
+    <Compile Include="BLL\Interface\ICheckIssuedService.cs" />
+    <Compile Include="BLL\Interface\IBankAccountService.cs" />
+    <Compile Include="BLL\Interface\IBankService.cs" />
+    <Compile Include="DAL\BankDAL.cs" />
+    <Compile Include="DAL\BankAccountDAL.cs" />
+    <Compile Include="DAL\CheckIssuedDAL.cs" />
+    <Compile Include="DAL\CheckDAL.cs" />
+    <Compile Include="DAL\AccountantsAdviceDAL.cs" />
+    <Compile Include="DAL\AccountantsAdviceDetailDAL.cs" />
+    <Compile Include="DAL\SignatoryDAL.cs" />
+    <Compile Include="DAL\Interface\ISignatoryDAL.cs" />
+    <Compile Include="DAL\Interface\IAccountantsAdviceDetailDAL.cs" />
+    <Compile Include="DAL\Interface\IAccountantsAdviceDAL.cs" />
+    <Compile Include="DAL\UserDAL.cs" />
+    <Compile Include="DAL\Interface\IUserDAL.cs" />
+    <Compile Include="DAL\Interface\ICheckDAL.cs" />
+    <Compile Include="DAL\VoucherDAL.cs" />
+    <Compile Include="DAL\Interface\IVoucherDAL.cs" />
+    <Compile Include="DAL\Interface\ICheckIssuedDAL.cs" />
+    <Compile Include="DAL\Interface\IBankAccountDAL.cs" />
+    <Compile Include="DAL\Interface\IBankDAL.cs" />
+    <Compile Include="DAL\RCISQLConnection.cs" />
+    <Compile Include="Model\BankModel.cs" />
+    <Compile Include="Model\BankAccountModel.cs" />
+    <Compile Include="Model\CheckModel.cs" />
+    <Compile Include="Model\CheckIssuedModel.cs" />
+    <Compile Include="Model\AccountantsAdviceModel.cs" />
+    <Compile Include="Model\AccountantsAdviceDetailModel.cs" />
+    <Compile Include="Model\SearchField.cs" />
+    <Compile Include="Model\SignatoryModel.cs" />
+    <Compile Include="Model\UserModel.cs" />
+    <Compile Include="Model\VoucherModel.cs" />
+    <Compile Include="Reports\crAccountantsAdvice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crAccountantsAdvice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\crCheck.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crCheck.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helper\Validation.cs" />
+    <Compile Include="Views\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmLogIn.Designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPrintAccountantsAdvice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPrintAccountantsAdvice.Designer.cs">
+      <DependentUpon>frmPrintAccountantsAdvice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPrintCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPrintCheck.Designer.cs">
+      <DependentUpon>frmPrintCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmCheckIssued.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCheckIssued.Designer.cs">
+      <DependentUpon>frmCheckIssued.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\frmCheckIssuedList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCheckIssuedList.Designer.cs">
+      <DependentUpon>frmCheckIssuedList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmVerifiedCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmVerifiedCheck.Designer.cs">
+      <DependentUpon>frmVerifiedCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmVoucherAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmVoucherAdd.Designer.cs">
+      <DependentUpon>frmVoucherAdd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reports\crAccountantsAdvice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crAccountantsAdvice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\crCheck.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crCheck.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPrintAccountantsAdvice.resx">
+      <DependentUpon>frmPrintAccountantsAdvice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPrintCheck.resx">
+      <DependentUpon>frmPrintCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCheckIssued.resx">
+      <DependentUpon>frmCheckIssued.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\frmCheckIssuedList.resx">
+      <DependentUpon>frmCheckIssuedList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmVerifiedCheck.resx">
+      <DependentUpon>frmVerifiedCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmVoucherAdd.resx">
+      <DependentUpon>frmVoucherAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\RCISystem.Model.CheckModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

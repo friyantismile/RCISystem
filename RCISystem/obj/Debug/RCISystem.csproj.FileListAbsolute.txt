@@ -1,0 +1,99 @@
+C:\Users\User\AppData\Local\Temporary Projects\RCISystem\bin\Debug\RCISystem.exe.config
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\bin\Debug\RCISystem.exe.config
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\bin\Debug\RCISystem.exe
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\bin\Debug\RCISystem.pdb
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.frmCheckIssued.resources
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.Properties.Resources.resources
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.exe
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.pdb
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.View.frmVoucherAdd.resources
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmCheckIssuedList.resources
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintCheck.resources
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmLogIn.resources
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmVerifiedCheck.resources
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintAccountantsAdvice.resources
+C:\Users\user\Desktop\RCISystem\RCISystem\bin\Debug\RCISystem.exe.config
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.exe
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.pdb
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmLogIn.resources
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintAccountantsAdvice.resources
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintCheck.resources
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.frmCheckIssued.resources
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.Properties.Resources.resources
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmCheckIssuedList.resources
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmVerifiedCheck.resources
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.View.frmVoucherAdd.resources
+C:\Users\user\Desktop\RCISystem\RCISystem\obj\Debug\RCISystem.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\RCISystem\RCISystem\bin\Debug\RCISystem.exe
+C:\Users\user\Desktop\RCISystem\RCISystem\bin\Debug\RCISystem.pdb
+C:\Users\User\Desktop\CHECK_ISSUED\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.Form1.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\bin\Debug\RCISystem.exe.config
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.exe
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.pdb
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\bin\Debug\RCISystem.exe
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\bin\Debug\RCISystem.pdb
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.Form1.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmLogIn.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintAccountantsAdvice.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintCheck.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.frmCheckIssued.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.Properties.Resources.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmCheckIssuedList.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmVerifiedCheck.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.View.frmVoucherAdd.resources
+C:\Users\User\Desktop\CHECK_ISSUED\Back-Up\06_11_2017\System\RCISystem\RCISystem\obj\Debug\RCISystem.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\bin\Debug\RCISystem.exe.config
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.exe
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.pdb
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\bin\Debug\RCISystem.exe
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\bin\Debug\RCISystem.pdb
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.Form1.resources
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmLogIn.resources
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintAccountantsAdvice.resources
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintCheck.resources
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.frmCheckIssued.resources
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Properties.Resources.resources
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmCheckIssuedList.resources
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmVerifiedCheck.resources
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.View.frmVoucherAdd.resources
+C:\Users\user\Desktop\P R O G R A M S\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.csproj.GenerateResource.Cache
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.Form1.resources
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmLogIn.resources
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintAccountantsAdvice.resources
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmPrintCheck.resources
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.frmCheckIssued.resources
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Properties.Resources.resources
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmCheckIssuedList.resources
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.Views.frmVerifiedCheck.resources
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.View.frmVoucherAdd.resources
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.csproj.GenerateResource.Cache
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\RCISystem.exe.config
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\RCISystem.exe
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\RCISystem.pdb
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\FlashControlV71.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\bin\Debug\stdole.dll
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.exe
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.pdb
+C:\Users\Alan\Documents\Visual Studio 2015\Projects\RCI_System\System\RCISystem\RCISystem\obj\Debug\RCISystem.csprojResolveAssemblyReference.cache
