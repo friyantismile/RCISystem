@@ -148,16 +148,16 @@ namespace RCISystem.Views
 
                         accountantsAdviceDetailModel.Add(new AccountantsAdviceDetailModel
                         {
-                            CheckIssuedID = int.Parse(row.Cells[1].Value.ToString()),
-                            CheckID = int.Parse(row.Cells[8].Value.ToString()),
+                            CheckIssuedID = decimal.Parse(row.Cells[1].Value.ToString()),
+                            CheckID = decimal.Parse(row.Cells[8].Value.ToString()),
                             VoucherNo = row.Cells[13].Value.ToString(),
-                            VoucherAmount = float.Parse(row.Cells[15].Value.ToString()),
+                            VoucherAmount = decimal.Parse(row.Cells[15].Value.ToString()),
                             CheckNo = row.Cells[9].Value.ToString(),
                             CheckDate = DateTime.Parse(row.Cells[10].Value.ToString()),
                             CheckPayee = row.Cells[11].Value.ToString(),
-                            CheckAmount = float.Parse(row.Cells[12].Value.ToString()),
+                            CheckAmount = decimal.Parse(row.Cells[12].Value.ToString()),
                             BankAccountID = int.Parse(row.Cells[19].Value.ToString()),
-                            VoucherID = int.Parse(row.Cells[20].Value.ToString())
+                            VoucherID = decimal.Parse(row.Cells[20].Value.ToString())
                         });
 
                     }
@@ -171,7 +171,7 @@ namespace RCISystem.Views
                     return;
                 }
                 AccountantsAdviceService newAccountantsAdviceService = new AccountantsAdviceService();
-                int New_AccountantsAdviceID = newAccountantsAdviceService.AddAccountantsAdviceTransaction(newAccountantsAdviceModel, accountantsAdviceDetailModel); ;
+                decimal New_AccountantsAdviceID = newAccountantsAdviceService.AddAccountantsAdviceTransaction(newAccountantsAdviceModel, accountantsAdviceDetailModel); ;
 
                 if (New_AccountantsAdviceID > 0)
                 {

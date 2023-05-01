@@ -18,13 +18,13 @@ namespace RCISystem.BLL
         }
 
 
-        public DataTable SearchByAccountantsAdviceID(int Id)
+        public DataTable SearchByAccountantsAdviceID(decimal Id)
         {
             return this.accountantsAdviceDetaileDAL.SearchByAccountantsAdviceID(Id);
         }
 
 
-        public DataTable SearchByCheckID(int Id)
+        public DataTable SearchByCheckID(decimal Id)
         {
             return this.accountantsAdviceDetaileDAL.SearchByCheckID(Id);
         }

@@ -12,7 +12,7 @@ namespace RCISystem.DAL
     public class AccountantsAdviceDetailDAL : RCISQLConnection, IAccountantsAdviceDetailDAL
     {
 
-        public DataTable SearchByAccountantsAdviceID(int Id)
+        public DataTable SearchByAccountantsAdviceID(decimal Id)
         {
             DataTable dataTable = new DataTable();
 
@@ -49,7 +49,7 @@ namespace RCISystem.DAL
         }
 
 
-        public DataTable SearchByCheckID(int Id)
+        public DataTable SearchByCheckID(decimal Id)
         {
             DataTable dataTable = new DataTable();
 

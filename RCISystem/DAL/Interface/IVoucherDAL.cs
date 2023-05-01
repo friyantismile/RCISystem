@@ -14,6 +14,6 @@ namespace RCISystem.DAL
         //bool UpdateBank(BankModel bankModel);
         //bool DeleteBank(int Id);
         //DataRow GetBankById(int Id);
-        //DataTable SearchBankByID(int ID);
+        DataTable SearchVoucherByCheckID(decimal ID);
     }
 }

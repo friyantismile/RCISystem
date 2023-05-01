@@ -24,7 +24,7 @@ namespace RCISystem.DAL
 
                 // Assign the SQL to the command object
                 string sql = "";
-                sql = "SELECT [BankAccountID],[BankID],[BankAccountNo],[BankAccountDescription] FROM  [tblBankAccount]";
+                sql = "SELECT [BankAccountID],[BankID],[BankAccountNo],[BankAccountDescription],[BankAccountCode],[Remarks] FROM  [tblBankAccount]";
                 sqlDataAdapter.SelectCommand.CommandText = sql;
 
                 // Fill the datatable from adapter
@@ -47,7 +47,7 @@ namespace RCISystem.DAL
 
                 // Assign the SQL to the command object
                 string sql = "";
-                sql = "SELECT [BankAccountID],[BankID],[BankAccountNo],[BankAccountDescription] FROM  [tblBankAccount] Where BankID=" + BankID + "";
+                sql = "SELECT [BankAccountID],[BankID],[BankAccountNo],[BankAccountDescription],[BankAccountCode],[Remarks] FROM  [tblBankAccount] Where BankID=" + BankID + "";
                 sqlDataAdapter.SelectCommand.CommandText = sql;
 
                 // Fill the datatable from adapter
@@ -71,7 +71,7 @@ namespace RCISystem.DAL
 
                 // Assign the SQL to the command object
                 string sql = "";
-                sql = "SELECT [BankAccountID],[BankID],[BankAccountNo],[BankAccountDescription] FROM  [BankAccountID] Where BankID=" + BankAccountID + "";
+                sql = "SELECT [BankAccountID],[BankID],[BankAccountNo],[BankAccountDescription],[BankAccountCode],[Remarks] FROM  [tblBankAccount] Where BankID=" + BankAccountID + "";
                 sqlDataAdapter.SelectCommand.CommandText = sql;
 
                 // Fill the datatable from adapter

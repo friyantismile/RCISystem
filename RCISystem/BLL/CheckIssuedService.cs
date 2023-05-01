@@ -30,7 +30,7 @@ namespace RCISystem.BLL
         }
 
 
-        public int AddCheckIssuedTransaction(CheckModel checkModel, List<VoucherModel> voucherModel, int UserID)
+        public decimal AddCheckIssuedTransaction(CheckModel checkModel, List<VoucherModel> voucherModel, int UserID)
         {
             return this.checkIssuedDAL.AddCheckIssuedTransaction(checkModel, voucherModel,UserID);
         }

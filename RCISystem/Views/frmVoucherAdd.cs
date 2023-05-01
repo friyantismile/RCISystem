@@ -17,7 +17,7 @@ namespace RCISystem.View
         private TextBox txtCheckAmount;
         private Validation validation = new Validation();
 
-        public frmVoucherAdd(DataGridView dgView ,TextBox txtCheckAmount)
+        public frmVoucherAdd(DataGridView dgView, TextBox txtCheckAmount)
         {
             InitializeComponent();
             this.dgView = dgView;
@@ -25,17 +25,17 @@ namespace RCISystem.View
         }
 
  
-        public void AddVoucher(string VoucherNo, DateTime VoucherDate, float VoucherAmount)
+        public void AddVoucher(string VoucherNo, DateTime VoucherDate, decimal VoucherAmount)
         {
-            dgView.Rows.Add(VoucherNo, VoucherDate, string.Format("{0:#,###.00}", VoucherAmount));            
+            dgView.Rows.Add(VoucherNo, VoucherDate, string.Format("{0:#,###.00}", VoucherAmount)); 
         }
 
         public void Get_Total_Amount()
         {
-            float temp_TotalAmount = 0;
+            decimal temp_TotalAmount = 0;
             for (int i = 0; i < dgView.Rows.Count; i++)
             {
-                temp_TotalAmount = temp_TotalAmount + float.Parse(dgView.Rows[i].Cells[2].Value.ToString());
+                temp_TotalAmount = temp_TotalAmount + decimal.Parse(dgView.Rows[i].Cells[2].Value.ToString());
             }
             txtCheckAmount.Text = string.Format("{0:#,###.00}", temp_TotalAmount);
         }
@@ -47,7 +47,7 @@ namespace RCISystem.View
 
             if (isVoucherAmountNotEmpty && isVoucherNoNotEmpty)
             {
-                AddVoucher(txtVoucherNo.Text, dtpVoucherDate.Value,  float.Parse(txtVoucherAmount.Text));
+                AddVoucher(txtVoucherNo.Text, dtpVoucherDate.Value,  decimal.Parse(txtVoucherAmount.Text));
                 txtVoucherNo.Clear();
                 txtVoucherAmount.Clear();
                 Get_Total_Amount();
@@ -62,7 +62,7 @@ namespace RCISystem.View
 
         private void txtVoucherNo_TextChanged(object sender, EventArgs e)
         {
-            validation.isNumber(txtVoucherNo);
+            //validation.isNumber(txtVoucherNo);
         }
 
         private void txtVoucherAmount_TextChanged(object sender, EventArgs e)

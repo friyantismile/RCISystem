@@ -1,0 +1,15 @@
+D:\RCISystem-master\RCISystem-master\RCISystem\bin\Release\RCISystem.exe.config
+D:\RCISystem-master\RCISystem-master\RCISystem\bin\Release\RCISystem.exe
+D:\RCISystem-master\RCISystem-master\RCISystem\bin\Release\RCISystem.pdb
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.Views.Form1.resources
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.Views.frmLogIn.resources
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.Views.frmPrintAccountantsAdvice.resources
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.Views.frmPrintCheck.resources
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.frmCheckIssued.resources
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.Properties.Resources.resources
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.Views.frmCheckIssuedList.resources
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.Views.frmVerifiedCheck.resources
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.View.frmVoucherAdd.resources
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.csproj.GenerateResource.Cache
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.exe
+D:\RCISystem-master\RCISystem-master\RCISystem\obj\Release\RCISystem.pdb

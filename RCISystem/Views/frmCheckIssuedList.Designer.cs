@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCheckIssuedList));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -51,6 +51,14 @@
             this.pnlCTO = new System.Windows.Forms.Panel();
             this.btnNewCheckIssued = new System.Windows.Forms.Button();
             this.dgvCheckIssuedList = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtVoucherNumber = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCheckNumber = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cboView = new System.Windows.Forms.ComboBox();
             this.ColCheckIssuedID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColDATEENCODED = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,14 +76,7 @@
             this.ENCODEDBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VERIFIEDBY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DATEVERIFIED = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtVoucherNumber = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCheckNumber = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cboView = new System.Windows.Forms.ComboBox();
+            this.AdviceID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -287,23 +288,23 @@
             this.dgvCheckIssuedList.AllowUserToAddRows = false;
             this.dgvCheckIssuedList.AllowUserToDeleteRows = false;
             this.dgvCheckIssuedList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle22.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCheckIssuedList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCheckIssuedList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCheckIssuedList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCheckIssuedList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCheckIssuedList.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle23.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCheckIssuedList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCheckIssuedList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCheckIssuedList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCheckIssuedList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColCheckIssuedID,
@@ -322,162 +323,36 @@
             this.VOUCHERAMOUNT,
             this.ENCODEDBY,
             this.VERIFIEDBY,
-            this.DATEVERIFIED});
+            this.DATEVERIFIED,
+            this.AdviceID});
             this.dgvCheckIssuedList.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle27.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCheckIssuedList.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCheckIssuedList.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvCheckIssuedList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvCheckIssuedList.GridColor = System.Drawing.Color.Teal;
             this.dgvCheckIssuedList.Location = new System.Drawing.Point(30, 250);
             this.dgvCheckIssuedList.MultiSelect = false;
             this.dgvCheckIssuedList.Name = "dgvCheckIssuedList";
             this.dgvCheckIssuedList.ReadOnly = true;
-            dataGridViewCellStyle28.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle28.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgvCheckIssuedList.RowHeadersDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvCheckIssuedList.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvCheckIssuedList.RowHeadersVisible = false;
             this.dgvCheckIssuedList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCheckIssuedList.Size = new System.Drawing.Size(844, 225);
             this.dgvCheckIssuedList.TabIndex = 28;
             this.dgvCheckIssuedList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCheckIssuedList_CellClick);
-            // 
-            // ColCheckIssuedID
-            // 
-            this.ColCheckIssuedID.HeaderText = "CheckIssuedID";
-            this.ColCheckIssuedID.Name = "ColCheckIssuedID";
-            this.ColCheckIssuedID.ReadOnly = true;
-            this.ColCheckIssuedID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.ColCheckIssuedID.Visible = false;
-            // 
-            // ColStatus
-            // 
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.White;
-            this.ColStatus.DefaultCellStyle = dataGridViewCellStyle24;
-            this.ColStatus.HeaderText = "STATUS";
-            this.ColStatus.Name = "ColStatus";
-            this.ColStatus.ReadOnly = true;
-            this.ColStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColDATEENCODED
-            // 
-            this.ColDATEENCODED.HeaderText = "DATE ENCODED";
-            this.ColDATEENCODED.Name = "ColDATEENCODED";
-            this.ColDATEENCODED.ReadOnly = true;
-            this.ColDATEENCODED.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColBANKCODE
-            // 
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColBANKCODE.DefaultCellStyle = dataGridViewCellStyle25;
-            this.ColBANKCODE.HeaderText = "BANK CODE";
-            this.ColBANKCODE.Name = "ColBANKCODE";
-            this.ColBANKCODE.ReadOnly = true;
-            this.ColBANKCODE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ColBANKACCOUNTNO
-            // 
-            this.ColBANKACCOUNTNO.HeaderText = "BANK ACCOUNT NO";
-            this.ColBANKACCOUNTNO.Name = "ColBANKACCOUNTNO";
-            this.ColBANKACCOUNTNO.ReadOnly = true;
-            this.ColBANKACCOUNTNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "BANK ACCOUNT DESCRIPTION";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colCHECKID
-            // 
-            this.colCHECKID.HeaderText = "CHECK ID";
-            this.colCHECKID.Name = "colCHECKID";
-            this.colCHECKID.ReadOnly = true;
-            this.colCHECKID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.colCHECKID.Visible = false;
-            // 
-            // colCHECKNO
-            // 
-            this.colCHECKNO.HeaderText = "CHECK NO";
-            this.colCHECKNO.Name = "colCHECKNO";
-            this.colCHECKNO.ReadOnly = true;
-            this.colCHECKNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // CHECKDATE
-            // 
-            this.CHECKDATE.HeaderText = "CHECK DATE";
-            this.CHECKDATE.Name = "CHECKDATE";
-            this.CHECKDATE.ReadOnly = true;
-            this.CHECKDATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // CHECKPAYEE
-            // 
-            this.CHECKPAYEE.HeaderText = "CHECK PAYEE";
-            this.CHECKPAYEE.Name = "CHECKPAYEE";
-            this.CHECKPAYEE.ReadOnly = true;
-            this.CHECKPAYEE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // CHECKAMOUNT
-            // 
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.CHECKAMOUNT.DefaultCellStyle = dataGridViewCellStyle26;
-            this.CHECKAMOUNT.HeaderText = "CHECK AMOUNT";
-            this.CHECKAMOUNT.Name = "CHECKAMOUNT";
-            this.CHECKAMOUNT.ReadOnly = true;
-            this.CHECKAMOUNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // VOUCHERNO
-            // 
-            this.VOUCHERNO.HeaderText = "VOUCHER NO";
-            this.VOUCHERNO.Name = "VOUCHERNO";
-            this.VOUCHERNO.ReadOnly = true;
-            this.VOUCHERNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // VOUCHERDATE
-            // 
-            this.VOUCHERDATE.HeaderText = "VOUCHER DATE";
-            this.VOUCHERDATE.Name = "VOUCHERDATE";
-            this.VOUCHERDATE.ReadOnly = true;
-            this.VOUCHERDATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // VOUCHERAMOUNT
-            // 
-            this.VOUCHERAMOUNT.HeaderText = "VOUCHER AMOUNT";
-            this.VOUCHERAMOUNT.Name = "VOUCHERAMOUNT";
-            this.VOUCHERAMOUNT.ReadOnly = true;
-            this.VOUCHERAMOUNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // ENCODEDBY
-            // 
-            this.ENCODEDBY.HeaderText = "ENCODED BY";
-            this.ENCODEDBY.Name = "ENCODEDBY";
-            this.ENCODEDBY.ReadOnly = true;
-            this.ENCODEDBY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // VERIFIEDBY
-            // 
-            this.VERIFIEDBY.HeaderText = "VERIFIED BY";
-            this.VERIFIEDBY.Name = "VERIFIEDBY";
-            this.VERIFIEDBY.ReadOnly = true;
-            this.VERIFIEDBY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // DATEVERIFIED
-            // 
-            this.DATEVERIFIED.HeaderText = "DATE VERIFIED";
-            this.DATEVERIFIED.Name = "DATEVERIFIED";
-            this.DATEVERIFIED.ReadOnly = true;
-            this.DATEVERIFIED.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // panel1
             // 
@@ -531,7 +406,6 @@
             this.label5.Size = new System.Drawing.Size(118, 18);
             this.label5.TabIndex = 47;
             this.label5.Text = "Voucher Number";
-           
             // 
             // txtCheckNumber
             // 
@@ -554,7 +428,6 @@
             this.label4.Size = new System.Drawing.Size(109, 18);
             this.label4.TabIndex = 45;
             this.label4.Text = "Check Number:";
-          
             // 
             // label3
             // 
@@ -581,6 +454,140 @@
             this.cboView.Size = new System.Drawing.Size(196, 26);
             this.cboView.TabIndex = 43;
             this.cboView.SelectedIndexChanged += new System.EventHandler(this.cboView_SelectedIndexChanged);
+            // 
+            // ColCheckIssuedID
+            // 
+            this.ColCheckIssuedID.HeaderText = "CheckIssuedID";
+            this.ColCheckIssuedID.Name = "ColCheckIssuedID";
+            this.ColCheckIssuedID.ReadOnly = true;
+            this.ColCheckIssuedID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.ColCheckIssuedID.Visible = false;
+            // 
+            // ColStatus
+            // 
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            this.ColStatus.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ColStatus.HeaderText = "STATUS";
+            this.ColStatus.Name = "ColStatus";
+            this.ColStatus.ReadOnly = true;
+            this.ColStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColDATEENCODED
+            // 
+            this.ColDATEENCODED.HeaderText = "DATE ENCODED";
+            this.ColDATEENCODED.Name = "ColDATEENCODED";
+            this.ColDATEENCODED.ReadOnly = true;
+            this.ColDATEENCODED.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColBANKCODE
+            // 
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColBANKCODE.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ColBANKCODE.HeaderText = "BANK CODE";
+            this.ColBANKCODE.Name = "ColBANKCODE";
+            this.ColBANKCODE.ReadOnly = true;
+            this.ColBANKCODE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ColBANKACCOUNTNO
+            // 
+            this.ColBANKACCOUNTNO.HeaderText = "BANK ACCOUNT NO";
+            this.ColBANKACCOUNTNO.Name = "ColBANKACCOUNTNO";
+            this.ColBANKACCOUNTNO.ReadOnly = true;
+            this.ColBANKACCOUNTNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "BANK ACCOUNT DESCRIPTION";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colCHECKID
+            // 
+            this.colCHECKID.HeaderText = "CHECK ID";
+            this.colCHECKID.Name = "colCHECKID";
+            this.colCHECKID.ReadOnly = true;
+            this.colCHECKID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.colCHECKID.Visible = false;
+            // 
+            // colCHECKNO
+            // 
+            this.colCHECKNO.HeaderText = "CHECK NO";
+            this.colCHECKNO.Name = "colCHECKNO";
+            this.colCHECKNO.ReadOnly = true;
+            this.colCHECKNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // CHECKDATE
+            // 
+            this.CHECKDATE.HeaderText = "CHECK DATE";
+            this.CHECKDATE.Name = "CHECKDATE";
+            this.CHECKDATE.ReadOnly = true;
+            this.CHECKDATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // CHECKPAYEE
+            // 
+            this.CHECKPAYEE.HeaderText = "CHECK PAYEE";
+            this.CHECKPAYEE.Name = "CHECKPAYEE";
+            this.CHECKPAYEE.ReadOnly = true;
+            this.CHECKPAYEE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // CHECKAMOUNT
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.CHECKAMOUNT.DefaultCellStyle = dataGridViewCellStyle5;
+            this.CHECKAMOUNT.HeaderText = "CHECK AMOUNT";
+            this.CHECKAMOUNT.Name = "CHECKAMOUNT";
+            this.CHECKAMOUNT.ReadOnly = true;
+            this.CHECKAMOUNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // VOUCHERNO
+            // 
+            this.VOUCHERNO.HeaderText = "VOUCHER NO";
+            this.VOUCHERNO.Name = "VOUCHERNO";
+            this.VOUCHERNO.ReadOnly = true;
+            this.VOUCHERNO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // VOUCHERDATE
+            // 
+            this.VOUCHERDATE.HeaderText = "VOUCHER DATE";
+            this.VOUCHERDATE.Name = "VOUCHERDATE";
+            this.VOUCHERDATE.ReadOnly = true;
+            this.VOUCHERDATE.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // VOUCHERAMOUNT
+            // 
+            this.VOUCHERAMOUNT.HeaderText = "VOUCHER AMOUNT";
+            this.VOUCHERAMOUNT.Name = "VOUCHERAMOUNT";
+            this.VOUCHERAMOUNT.ReadOnly = true;
+            this.VOUCHERAMOUNT.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ENCODEDBY
+            // 
+            this.ENCODEDBY.HeaderText = "ENCODED BY";
+            this.ENCODEDBY.Name = "ENCODEDBY";
+            this.ENCODEDBY.ReadOnly = true;
+            this.ENCODEDBY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // VERIFIEDBY
+            // 
+            this.VERIFIEDBY.HeaderText = "VERIFIED BY";
+            this.VERIFIEDBY.Name = "VERIFIEDBY";
+            this.VERIFIEDBY.ReadOnly = true;
+            this.VERIFIEDBY.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // DATEVERIFIED
+            // 
+            this.DATEVERIFIED.HeaderText = "DATE VERIFIED";
+            this.DATEVERIFIED.Name = "DATEVERIFIED";
+            this.DATEVERIFIED.ReadOnly = true;
+            this.DATEVERIFIED.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // AdviceID
+            // 
+            this.AdviceID.HeaderText = "AdviceID";
+            this.AdviceID.Name = "AdviceID";
+            this.AdviceID.ReadOnly = true;
+            this.AdviceID.Visible = false;
             // 
             // frmCheckIssuedList
             // 
@@ -631,6 +638,14 @@
         private System.Windows.Forms.Button btnNewCheckIssued;
         private System.Windows.Forms.DataGridView dgvCheckIssuedList;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cboView;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtVoucherNumber;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCheckNumber;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColCheckIssuedID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColStatus;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColDATEENCODED;
@@ -648,13 +663,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ENCODEDBY;
         private System.Windows.Forms.DataGridViewTextBoxColumn VERIFIEDBY;
         private System.Windows.Forms.DataGridViewTextBoxColumn DATEVERIFIED;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cboView;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtVoucherNumber;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCheckNumber;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn AdviceID;
     }
 }

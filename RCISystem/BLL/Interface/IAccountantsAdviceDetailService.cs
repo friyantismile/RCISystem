@@ -11,8 +11,8 @@ namespace RCISystem.BLL
     public interface IAccountantsAdviceDetailService
     {
         //DataTable GetAllBank();
-        DataTable SearchByAccountantsAdviceID(int Id);
-        DataTable SearchByCheckID(int Id);
+        DataTable SearchByAccountantsAdviceID(decimal Id);
+        DataTable SearchByCheckID(decimal Id);
         //bool UpdateBank(BankModel bankModel);
         //bool DeleteBank(int Id);
         //DataRow GetBankById(int Id);

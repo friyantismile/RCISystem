@@ -8,9 +8,9 @@ namespace RCISystem.Model
 {
     public class CheckIssuedModel
     {
-        public int CheckIssuedID { get; set; }
-        public int CheckID { get; set; }
-        public int VoucherID { get; set; }
+        public decimal CheckIssuedID { get; set; }
+        public decimal CheckID { get; set; }
+        public decimal VoucherID { get; set; }
         //public IList<CheckModel> checkModel { get; set; }
         //public IList<VoucherModel> voucherModel { get; set; }
         public DateTime DateEncoded { get; set; }
@@ -24,6 +24,6 @@ namespace RCISystem.Model
         public int IsCheckCanceled { get; set; }
         public int CheckCanceledBy { get; set; }
         public Nullable<DateTime> DateCheckCanceled { get; set; }
-        public int AccountantsAdviceID { get; set; }
+        public decimal AccountantsAdviceID { get; set; }
     }
 }

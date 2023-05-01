@@ -8,17 +8,17 @@ namespace RCISystem.Model
 {
     public class AccountantsAdviceDetailModel
     {
-        public int AccountantsAdviceID { get; set; }
-        public int AccountantsAdviceDetailID { get; set; }
-        public int CheckIssuedID { get; set; }
-        public int CheckID { get; set; }
-        public int VoucherID { get; set; }
+        public decimal AccountantsAdviceID { get; set; }
+        public decimal AccountantsAdviceDetailID { get; set; }
+        public decimal CheckIssuedID { get; set; }
+        public decimal CheckID { get; set; }
+        public decimal VoucherID { get; set; }
         public string VoucherNo { get; set; }
-        public float VoucherAmount { get; set; }
+        public decimal VoucherAmount { get; set; }
         public string CheckNo { get; set; }
         public DateTime CheckDate { get; set; }
         public string CheckPayee { get; set; }
-        public float CheckAmount { get; set; }
+        public decimal CheckAmount { get; set; }
         public int BankAccountID { get; set; }
     }
 }

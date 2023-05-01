@@ -42,6 +42,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnLogIn = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,6 +55,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.btnMinimize);
             this.panel2.Controls.Add(this.btnExit);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -233,6 +235,16 @@
             this.btnLogIn.UseVisualStyleBackColor = false;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(12, 11);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 7;
+            this.textBox1.Text = "V07.09.2019";
+            // 
             // frmLogIn
             // 
             this.AcceptButton = this.btnLogIn;
@@ -251,6 +263,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.frmLogIn_Load);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -279,5 +292,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnLogIn;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

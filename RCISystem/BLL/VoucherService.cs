@@ -24,5 +24,11 @@ namespace RCISystem.BLL
         {
             return this.voucherDAL.AddVoucher(voucherModel);
         }
+
+
+        public DataTable SearchVoucherByCheckID(decimal CheckId)
+        {
+            return this.voucherDAL.SearchVoucherByCheckID(CheckId);
+        }
     }
 }

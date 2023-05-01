@@ -12,5 +12,7 @@ namespace RCISystem.Model
         public int BankID { get; set; }
         public string BankAccountNo { get; set; }
         public string BankAccountDescription { get; set; }
+        public string BankAccountCode { get; set; }
+        public string Remarks { get; set; }
     }
 }

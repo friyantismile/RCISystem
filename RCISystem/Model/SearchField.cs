@@ -8,9 +8,9 @@ namespace RCISystem.Model
 {
     public class SearchField
     {
-        public string VerificationStatus { get; set; } = null;
-        public string CheckNumber { get; set; } = null;
-        public string VoucherNumber { get; set; } = null;
-        public bool IsAdviced { get; set; } = false;
+        public string VerificationStatus { get; set; } 
+        public string CheckNumber { get; set; } 
+        public string VoucherNumber { get; set; } 
+        public bool IsAdviced { get; set; } 
     }
 }

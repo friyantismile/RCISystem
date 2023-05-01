@@ -13,7 +13,7 @@ namespace RCISystem.BLL
         DataTable GetAllCheckIssued(SearchField searchField);
         bool AddCheckIssued(CheckIssuedModel checkIssuedModel);
        // int AddCheckIssuedTransaction(CheckModel checkModel, string[,] voucherInfo);
-        int AddCheckIssuedTransaction(CheckModel checkModel, List<VoucherModel> voucherModel,int UserID);
+        decimal AddCheckIssuedTransaction(CheckModel checkModel, List<VoucherModel> voucherModel, int UserID);
         //bool UpdateBank(BankModel bankModel);
         //bool DeleteBank(int Id);
         //DataRow GetBankById(int Id);

@@ -8,10 +8,10 @@ namespace RCISystem.Model
 {
     public class VoucherModel
     {
-        public int VoucherID { get; set; }
+        public decimal VoucherID { get; set; }
         public string VoucherNo { get; set; }
         public DateTime VoucherDate { get; set; }
         public string VoucherPayee { get; set; }
-        public float VoucherAmount{ get; set; }
+        public decimal VoucherAmount { get; set; }
     }
 }

@@ -19,7 +19,7 @@ namespace RCISystem.BLL
         }
 
 
-        public int AddCheck(CheckModel checkModel)
+        public decimal AddCheck(CheckModel checkModel)
         {
             return this.checkDAL.AddCheck(checkModel);
         }
@@ -30,7 +30,11 @@ namespace RCISystem.BLL
         }
 
 
-        public DataTable SearchCheckByCheckID(int CheckId)
+        public DataTable GetAllCheckPayee()
+        {
+            return this.checkDAL.GetAllCheckPayee();
+        }
+        public DataTable SearchCheckByCheckID(decimal CheckId)
         {
             return this.checkDAL.SearchCheckByCheckID(CheckId);
         }

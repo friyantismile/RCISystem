@@ -11,7 +11,7 @@ namespace RCISystem.DAL
 {
     public class AccountantsAdviceDAL : RCISQLConnection, IAccountantsAdviceDAL
     {
-        public DataTable SearchByAccountantsAdviceID(int Id)
+        public DataTable SearchByAccountantsAdviceID(decimal Id)
         {
             DataTable dataTable = new DataTable();
 
@@ -40,14 +40,14 @@ namespace RCISystem.DAL
         }
 
 
-        public int AddAccountantsAdviceTransaction(AccountantsAdviceModel accountantsAdviceModel, List<AccountantsAdviceDetailModel> accountantsAdviceDetailModel)
+        public decimal AddAccountantsAdviceTransaction(AccountantsAdviceModel accountantsAdviceModel, List<AccountantsAdviceDetailModel> accountantsAdviceDetailModel)
         {
             SqlConnection connection = new SqlConnection(this.ConnectionString);
             {
                 SqlCommand command = connection.CreateCommand();
                 SqlTransaction transaction = null;
-                int New_AccountantsAdviceID = 0;
-                int Result = 0;
+                decimal New_AccountantsAdviceID = 0;
+                decimal Result = 0;
                 string sql = "";
 
                 try

@@ -59,14 +59,26 @@ namespace RCISystem.Views
 
         private void btnVerified_Click(object sender, EventArgs e)
         {
-            int CheckID = int.Parse(dgvCheckIssuedList.SelectedRows[0].Cells[6].Value.ToString());
+            decimal CheckID = int.Parse(dgvCheckIssuedList.SelectedRows[0].Cells[6].Value.ToString());
             UpdateVerification(CheckID, this.CurrentUserID, DateTime.Now, 1);
         }
 
         private void btnUnverified_Click(object sender, EventArgs e)
         {
-            int CheckID = int.Parse(dgvCheckIssuedList.SelectedRows[0].Cells[6].Value.ToString());
-            UpdateVerification(CheckID, this.CurrentUserID, DateTime.Now, 0);
+            decimal AccountantsAdviceID = int.Parse(dgvCheckIssuedList.SelectedRows[0].Cells[17].Value.ToString());
+            if (AccountantsAdviceID > 0)
+            {
+                string message = "Check Already Issued An Advice!";
+                string title = "Close Window";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result = MessageBox.Show(message, title, buttons, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                decimal CheckID = int.Parse(dgvCheckIssuedList.SelectedRows[0].Cells[6].Value.ToString());
+                UpdateVerification(CheckID, this.CurrentUserID, DateTime.Now, 0);
+            }
         }
 
         private void dgvCheckIssuedList_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -109,7 +121,7 @@ namespace RCISystem.Views
             cboView.SelectedIndex = 1;
         }
 
-        public void UpdateVerification(int CheckID, int UserID, Nullable<DateTime> DateVerified, int IsVerified)
+        public void UpdateVerification(decimal CheckID, int UserID, Nullable<DateTime> DateVerified, int IsVerified)
         {
             try
             {
@@ -199,7 +211,8 @@ namespace RCISystem.Views
                         dr["VoucherAmount"].ToString(),
                         dr["EncodedByFullname"].ToString(),
                         dr["VerifiedByFullname"].ToString(),
-                        dr["DateVerified"].ToString()
+                        dr["DateVerified"].ToString(),
+                        dr["AccountantsAdviceID"].ToString()
                         );
                     Check_ID = dr["CheckID"].ToString();
 

@@ -128,14 +128,14 @@ namespace RCISystem.DAL
         }
 
 
-        public int AddCheckIssuedTransaction(CheckModel checkModel, List<VoucherModel> voucherModel, int UserID)
+        public decimal AddCheckIssuedTransaction(CheckModel checkModel, List<VoucherModel> voucherModel, int UserID)
         {
             SqlConnection connection = new SqlConnection(this.ConnectionString);
             {
                 SqlCommand command = connection.CreateCommand();
                 SqlTransaction transaction = null;
-                int New_CheckID = 0;
-                int Result = 0;
+                decimal New_CheckID = 0;
+                decimal Result = 0;
 
                 try
                 {
@@ -152,7 +152,7 @@ namespace RCISystem.DAL
                     command.ExecuteNonQuery();
 
                     command.CommandText = "Select @@Identity";
-                    New_CheckID = int.Parse(command.ExecuteScalar().ToString());
+                    New_CheckID = decimal.Parse(command.ExecuteScalar().ToString());
 
                     //   LBound(arDetails, 2) To UBound(arDetails, 2)
                     foreach (var item in voucherModel)
@@ -160,7 +160,7 @@ namespace RCISystem.DAL
                         command.CommandText = "INSERT INTO [tblVoucher] ([VoucherNo] ,[VoucherDate],[VoucherPayee],[VoucherAmount]) VALUES ('" + item.VoucherNo + "','" + item.VoucherDate + "','" + item.VoucherPayee + "'," + item.VoucherAmount + ")";                        
                         command.ExecuteNonQuery();
                         command.CommandText = "Select @@Identity";
-                        int New_VoucherID = int.Parse(command.ExecuteScalar().ToString());
+                        decimal New_VoucherID = decimal.Parse(command.ExecuteScalar().ToString());
 
 
                         command.CommandText = "INSERT INTO [tblCheckIssued] ([CheckID] ,[VoucherID],[DateEncoded],[EncodedBy]) VALUES (" + New_CheckID + "," + New_VoucherID + ",'" + DateTime.Now + "'," + UserID + ")";

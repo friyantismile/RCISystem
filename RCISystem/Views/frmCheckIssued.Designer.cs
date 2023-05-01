@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnNewCheckIssuance = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtCheckRemarks = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtBankAccountCode = new System.Windows.Forms.TextBox();
             this.dgVouchers = new System.Windows.Forms.DataGridView();
             this.VoucherNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VoucherDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,19 +51,21 @@
             this.cboBankAccountNo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.cboBankAccountCode = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txtCheckPayee = new System.Windows.Forms.TextBox();
             this.btnSaveCheck = new System.Windows.Forms.Button();
             this.btnPrintCheck = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboPayee = new System.Windows.Forms.ComboBox();
             this.dtpCheckDate = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCheckNo = new System.Windows.Forms.TextBox();
-            this.txtCheckPayee = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCheckID = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
@@ -75,6 +81,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Controls.Add(this.cboPayee);
+            this.panel1.Controls.Add(this.btnNewCheckIssuance);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txtCheckRemarks);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.panel4);
@@ -86,15 +96,50 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(5, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(706, 587);
+            this.panel1.Size = new System.Drawing.Size(706, 620);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnNewCheckIssuance
+            // 
+            this.btnNewCheckIssuance.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNewCheckIssuance.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnNewCheckIssuance.FlatAppearance.BorderSize = 0;
+            this.btnNewCheckIssuance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewCheckIssuance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewCheckIssuance.ForeColor = System.Drawing.Color.White;
+            this.btnNewCheckIssuance.Location = new System.Drawing.Point(234, 564);
+            this.btnNewCheckIssuance.Name = "btnNewCheckIssuance";
+            this.btnNewCheckIssuance.Size = new System.Drawing.Size(172, 38);
+            this.btnNewCheckIssuance.TabIndex = 40;
+            this.btnNewCheckIssuance.Text = "NEW CHECK ISSUANCE";
+            this.btnNewCheckIssuance.UseVisualStyleBackColor = false;
+            this.btnNewCheckIssuance.Click += new System.EventHandler(this.btnNewCheckIssuance_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(26, 522);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 18);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "Check Remarks :";
+            // 
+            // txtCheckRemarks
+            // 
+            this.txtCheckRemarks.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCheckRemarks.Location = new System.Drawing.Point(149, 520);
+            this.txtCheckRemarks.Name = "txtCheckRemarks";
+            this.txtCheckRemarks.Size = new System.Drawing.Size(533, 20);
+            this.txtCheckRemarks.TabIndex = 38;
             // 
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.txtBankAccountCode);
             this.groupBox3.Controls.Add(this.dgVouchers);
             this.groupBox3.Controls.Add(this.txtCheckAmount);
             this.groupBox3.Controls.Add(this.label9);
@@ -109,6 +154,14 @@
             this.groupBox3.TabIndex = 37;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "List of Vouchers";
+            // 
+            // txtBankAccountCode
+            // 
+            this.txtBankAccountCode.Location = new System.Drawing.Point(162, 98);
+            this.txtBankAccountCode.Name = "txtBankAccountCode";
+            this.txtBankAccountCode.Size = new System.Drawing.Size(100, 26);
+            this.txtBankAccountCode.TabIndex = 14;
+            this.txtBankAccountCode.Visible = false;
             // 
             // dgVouchers
             // 
@@ -135,28 +188,28 @@
             // 
             // VoucherNo
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomLeft;
-            this.VoucherNo.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomLeft;
+            this.VoucherNo.DefaultCellStyle = dataGridViewCellStyle4;
             this.VoucherNo.HeaderText = "VOUCHER NO";
             this.VoucherNo.Name = "VoucherNo";
             this.VoucherNo.ReadOnly = true;
             // 
             // VoucherDate
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Format = "d";
-            dataGridViewCellStyle2.NullValue = null;
-            this.VoucherDate.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Format = "d";
+            dataGridViewCellStyle5.NullValue = null;
+            this.VoucherDate.DefaultCellStyle = dataGridViewCellStyle5;
             this.VoucherDate.HeaderText = "VOUCHER DATE";
             this.VoucherDate.Name = "VoucherDate";
             this.VoucherDate.ReadOnly = true;
             // 
             // VoucherAmount
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "N2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.VoucherAmount.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.VoucherAmount.DefaultCellStyle = dataGridViewCellStyle6;
             this.VoucherAmount.HeaderText = "VOUCHER AMOUNT";
             this.VoucherAmount.Name = "VoucherAmount";
             this.VoucherAmount.ReadOnly = true;
@@ -273,6 +326,9 @@
             this.cboBankAccountNo.Name = "cboBankAccountNo";
             this.cboBankAccountNo.Size = new System.Drawing.Size(296, 26);
             this.cboBankAccountNo.TabIndex = 1;
+            this.cboBankAccountNo.SelectedIndexChanged += new System.EventHandler(this.cboBankAccountNo_SelectedIndexChanged);
+            this.cboBankAccountNo.Click += new System.EventHandler(this.cboBankAccountNo_Click);
+            this.cboBankAccountNo.Leave += new System.EventHandler(this.cboBankAccountNo_Leave);
             // 
             // label2
             // 
@@ -289,6 +345,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Teal;
+            this.panel4.Controls.Add(this.cboBankAccountCode);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
@@ -297,6 +354,21 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(706, 65);
             this.panel4.TabIndex = 34;
+            // 
+            // cboBankAccountCode
+            // 
+            this.cboBankAccountCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboBankAccountCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBankAccountCode.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboBankAccountCode.FormattingEnabled = true;
+            this.cboBankAccountCode.Location = new System.Drawing.Point(271, 17);
+            this.cboBankAccountCode.Name = "cboBankAccountCode";
+            this.cboBankAccountCode.Size = new System.Drawing.Size(296, 26);
+            this.cboBankAccountCode.TabIndex = 3;
+            this.cboBankAccountCode.Visible = false;
+            this.cboBankAccountCode.SelectedIndexChanged += new System.EventHandler(this.cboBankAccountCode_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -368,6 +440,15 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // txtCheckPayee
+            // 
+            this.txtCheckPayee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCheckPayee.Location = new System.Drawing.Point(10, 106);
+            this.txtCheckPayee.Name = "txtCheckPayee";
+            this.txtCheckPayee.Size = new System.Drawing.Size(298, 26);
+            this.txtCheckPayee.TabIndex = 4;
+            this.txtCheckPayee.TextChanged += new System.EventHandler(this.txtCheckPayee_TextChanged);
+            // 
             // btnSaveCheck
             // 
             this.btnSaveCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -376,7 +457,7 @@
             this.btnSaveCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveCheck.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSaveCheck.ForeColor = System.Drawing.Color.White;
-            this.btnSaveCheck.Location = new System.Drawing.Point(412, 531);
+            this.btnSaveCheck.Location = new System.Drawing.Point(412, 564);
             this.btnSaveCheck.Name = "btnSaveCheck";
             this.btnSaveCheck.Size = new System.Drawing.Size(132, 38);
             this.btnSaveCheck.TabIndex = 31;
@@ -393,7 +474,7 @@
             this.btnPrintCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrintCheck.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintCheck.ForeColor = System.Drawing.Color.White;
-            this.btnPrintCheck.Location = new System.Drawing.Point(550, 531);
+            this.btnPrintCheck.Location = new System.Drawing.Point(550, 564);
             this.btnPrintCheck.Name = "btnPrintCheck";
             this.btnPrintCheck.Size = new System.Drawing.Size(132, 38);
             this.btnPrintCheck.TabIndex = 30;
@@ -407,9 +488,9 @@
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.dtpCheckDate);
             this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.txtCheckPayee);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtCheckNo);
-            this.groupBox2.Controls.Add(this.txtCheckPayee);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Teal;
@@ -419,6 +500,19 @@
             this.groupBox2.TabIndex = 36;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Check Details";
+            // 
+            // cboPayee
+            // 
+            this.cboPayee.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cboPayee.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboPayee.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboPayee.FormattingEnabled = true;
+            this.cboPayee.Location = new System.Drawing.Point(15, 572);
+            this.cboPayee.Name = "cboPayee";
+            this.cboPayee.Size = new System.Drawing.Size(302, 26);
+            this.cboPayee.TabIndex = 4;
+            this.cboPayee.Visible = false;
+            this.cboPayee.SelectedIndexChanged += new System.EventHandler(this.cboPayee_SelectedIndexChanged);
             // 
             // dtpCheckDate
             // 
@@ -462,15 +556,6 @@
             this.txtCheckNo.TabIndex = 2;
             this.txtCheckNo.TextChanged += new System.EventHandler(this.txtCheckNo_TextChanged);
             // 
-            // txtCheckPayee
-            // 
-            this.txtCheckPayee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCheckPayee.Location = new System.Drawing.Point(9, 107);
-            this.txtCheckPayee.Name = "txtCheckPayee";
-            this.txtCheckPayee.Size = new System.Drawing.Size(298, 26);
-            this.txtCheckPayee.TabIndex = 4;
-            this.txtCheckPayee.TextChanged += new System.EventHandler(this.txtCheckPayee_TextChanged);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -483,7 +568,7 @@
             // 
             // txtCheckID
             // 
-            this.txtCheckID.Location = new System.Drawing.Point(28, 521);
+            this.txtCheckID.Location = new System.Drawing.Point(28, 546);
             this.txtCheckID.Name = "txtCheckID";
             this.txtCheckID.Size = new System.Drawing.Size(121, 20);
             this.txtCheckID.TabIndex = 32;
@@ -494,7 +579,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(716, 592);
+            this.ClientSize = new System.Drawing.Size(716, 625);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCheckIssued";
@@ -552,6 +637,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn VoucherNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn VoucherDate;
         private System.Windows.Forms.DataGridViewTextBoxColumn VoucherAmount;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtCheckRemarks;
+        private System.Windows.Forms.ComboBox cboBankAccountCode;
+        private System.Windows.Forms.TextBox txtBankAccountCode;
+        private System.Windows.Forms.Button btnNewCheckIssuance;
+        private System.Windows.Forms.ComboBox cboPayee;
     }
 }
 

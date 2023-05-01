@@ -10,10 +10,11 @@ namespace RCISystem.DAL
     public interface ICheckDAL
     {
         DataTable GetAllCheck();
-        int  AddCheck(CheckModel checkModel);
+        DataTable GetAllCheckPayee();
+        decimal AddCheck(CheckModel checkModel);
         //bool UpdateBank(BankModel bankModel);
         //bool DeleteBank(int Id);
         //DataRow GetBankById(int Id);
-        DataTable SearchCheckByCheckID(int CheckId);
+        DataTable SearchCheckByCheckID(decimal CheckId);
     }
 }

@@ -8,7 +8,7 @@ namespace RCISystem.Model
 {
     public class AccountantsAdviceModel
     {
-        public int AccountantsAdviceID { get; set; }
+        public decimal AccountantsAdviceID { get; set; }
         public DateTime AdviceDate { get; set; }
         public int GeneratedByID { get; set; }
         public DateTime GeneratedDate { get; set; }

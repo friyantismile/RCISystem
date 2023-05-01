@@ -18,13 +18,13 @@ namespace RCISystem.BLL
         }
 
 
-        public DataTable SearchByAccountantsAdviceID(int Id)
+        public DataTable SearchByAccountantsAdviceID(decimal Id)
         {
             return this.accountantsAdviceDAL.SearchByAccountantsAdviceID(Id);
         }
 
 
-        public int AddAccountantsAdviceTransaction(Model.AccountantsAdviceModel accountantsAdviceModel, List<Model.AccountantsAdviceDetailModel> accountantsAdviceDetailModel)
+        public decimal AddAccountantsAdviceTransaction(Model.AccountantsAdviceModel accountantsAdviceModel, List<Model.AccountantsAdviceDetailModel> accountantsAdviceDetailModel)
         {
             return this.accountantsAdviceDAL.AddAccountantsAdviceTransaction(accountantsAdviceModel,accountantsAdviceDetailModel);
         }

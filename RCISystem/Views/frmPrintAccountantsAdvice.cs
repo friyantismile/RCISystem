@@ -14,8 +14,8 @@ namespace RCISystem.Views
 {
     public partial class frmPrintAccountantsAdvice : Form
     {
-        private int AccountantsAdviceID;
-        public frmPrintAccountantsAdvice(int AccountantsAdviceID)
+        private decimal AccountantsAdviceID;
+        public frmPrintAccountantsAdvice(decimal AccountantsAdviceID)
         {
             InitializeComponent();
             this.AccountantsAdviceID = AccountantsAdviceID;

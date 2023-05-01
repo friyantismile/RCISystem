@@ -11,11 +11,12 @@ namespace RCISystem.BLL
     public interface ICheckService
     {
         DataTable GetAllCheck();
-        int AddCheck(CheckModel checkModel);
+        DataTable GetAllCheckPayee();
+        decimal AddCheck(CheckModel checkModel);
         //bool UpdateBank(BankModel bankModel);
         //bool DeleteBank(int Id);
         //DataRow GetBankById(int Id);
         //DataTable SearchBankByID(int ID);
-        DataTable SearchCheckByCheckID(int CheckId);
+        DataTable SearchCheckByCheckID(decimal CheckId);
     }
 }
